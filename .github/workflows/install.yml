@@ -21,7 +21,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: common/scripts/install-run-rush.js install
+    - run: node common/scripts/install-run-rush.js install
   
   install-on-Mac:
 
@@ -37,7 +37,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: common/scripts/install-run-rush.js install
+    - run: node common/scripts/install-run-rush.js install
       
   install-on-Windows:
 
@@ -53,4 +53,4 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: common/scripts/install-run-rush.js install
+    - run: node common/scripts/install-run-rush.js install
